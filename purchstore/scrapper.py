@@ -18,36 +18,45 @@ import time
 
 
 class Scrapper:
-    def __init__(self, image_dir: str):
-        self.image_dir = image_dir
 
     def extract_url_from_qr(self, image_path):
         image = cv2.imread(image_path)
         decoded_objects = decode(image)
 
-        urls = []
         for obj in decoded_objects:
-            qr_data = obj.data.decode('utf-8')
-            qr_type = obj.type
 
-            if qr_type == 'QRCODE':
-                if (
-                    qr_data.startswith('http://') or
-                    qr_data.startswith('https://')
-                ):
-                    urls.append(qr_data)
+            if not obj.type == 'QRCODE':
+                raise ValueError
 
-        if not len(urls):
-            raise ValueError
+            parsed_url = urlparse(obj.data.decode('utf-8'))
+            query_params = parse_qs(parsed_url.query)
 
-        parsed_url = urlparse(urls[0])
-        query_params = parse_qs(parsed_url.query)
+            p_value = query_params['p'][0]
 
-        p_value = query_params['p'][0]
+            return f"http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode?p={p_value}"
+        
+        raise ValueError
+    
+    def parse_codes(self, codes: List[str]):
+        from purchstore.database import db
 
-        return f"http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode?p={p_value}"
+        for code in codes:
+            url = f"http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode?p={code}"
+            html = self.get_html(url)
+            itens_compra = self.coletar_itens_de_compra(html)
+            compra = self.coletar_compra_info(html, itens_compra)
+            print('\n'*2)
+            print('-'*10 + " ITENS " + '-'*10)
+            [print(item) for item in itens_compra]
+            print('-'*10 + " ITENS " + '-'*10)
+            print('\n'*2)
+            print('-'*10 + " COMPRA " + '-'*10)
+            print(compra)
+            print('-'*10 + " COMPRA " + '-'*10)
+            db.inserir_compra(compra)
+            print('\n\n\n\n----------------------\n\n\n\n')
 
-    def get_html(self, url: str, headless=False):
+    def get_html(self, url: str, headless=True):
         chrome_options = Options()
 
         if headless:
@@ -186,16 +195,22 @@ class Scrapper:
         if strong:
             strong.decompose()
 
-    def run(self):
+    def parse_images(self, image_dir):
         from purchstore.database import db
         from os import listdir, path
 
-        images = listdir(self.image_dir)
+        images = listdir(image_dir)
         for i, image in enumerate(images):
-            print("--------------", image, "--------------")
-            image_path = path.join(self.image_dir, image)
+            if image.startswith('_'):
+                continue
 
-            url = self.extract_url_from_qr(image_path)
+            print("--------------", image, "--------------")
+            image_path = path.join(image_dir, image)
+
+            try:
+                url = self.extract_url_from_qr(image_path)
+            except ValueError:
+                continue
 
             # from content import html
             html = self.get_html(url)
