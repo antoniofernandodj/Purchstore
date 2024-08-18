@@ -1,22 +1,22 @@
-Código,Nome,Quantidade,Unidade,Valor Unitário,Valor Total
-336765,ABOBORA MORANGA KG,0.434,kg,4.36,1.89
-287753,BATATA GRANEL KG,0.398,kg,7.37,2.93
-336871,BATATA DOCE ROSADA K,0.298,kg,3.88,1.16
-287760,CEBOLA GRANEL KG,0.198,kg,4.86,0.96
-287869,CENOURA GNEL KG,0.278,kg,3.88,1.08
-238045,MELANCIA KG,1.256,kg,5.62,7.06
-337397,PIMENTAO VERDE KG,0.458,kg,9.59,4.39
-287784,TOMATE GRANEL KG,0.097,kg,4.81,0.47
-287784,TOMATE GRANEL KG,0.198,kg,4.86,0.96
-1094103,ACUCAR REF GUARA 1KG,2.0,UN,3.88,7.76
-3777602,ORG ARROZ TIO JOAO1K,1.0,UN,13.4,13.4
-3517840,AZ PORT EV AND 250ML,1.0,UN,24.28,24.28
-1376261,BISC MAIZ PIRAQ 175G,2.0,UN,2.9,5.8
-211390,BISN TRAD S BOYS 300,1.0,UN,7.47,7.47
-463478,CAFE 3 CORAC TRAD500,1.0,UN,18.93,18.93
-778060,COLORIFICO KITAN 80G,2.0,UN,3.29,6.58
-1122701,FILE SADIA BJ 1KG,4.0,UN,18.36,73.44
-1407648,P LAB NIVEA 48G ORI,1.0,UN,13.88,13.88
-1281652,IOG LIQ MOR 1250G,1.0,UN,16.02,16.02
-1126732,FORMA QUALITA,1.0,UN,6.79,6.79
-4979227,QA ALHO CEB EF 200G,1.0,UN,9.02,9.02
+Código  ,Nome                 ,Quantidade ,Unidade ,Valor Unitário ,Valor Total
+ 336765 ,ABOBORA MORANGA KG   ,     0.434 ,kg      ,          4.36 ,       1.89
+ 287753 ,BATATA GRANEL KG     ,     0.398 ,kg      ,          7.37 ,       2.93
+ 336871 ,BATATA DOCE ROSADA K ,     0.298 ,kg      ,          3.88 ,       1.16
+ 287760 ,CEBOLA GRANEL KG     ,     0.198 ,kg      ,          4.86 ,       0.96
+ 287869 ,CENOURA GNEL KG      ,     0.278 ,kg      ,          3.88 ,       1.08
+ 238045 ,MELANCIA KG          ,     1.256 ,kg      ,          5.62 ,       7.06
+ 337397 ,PIMENTAO VERDE KG    ,     0.458 ,kg      ,          9.59 ,       4.39
+ 287784 ,TOMATE GRANEL KG     ,     0.097 ,kg      ,          4.81 ,       0.47
+ 287784 ,TOMATE GRANEL KG     ,     0.198 ,kg      ,          4.86 ,       0.96
+1094103 ,ACUCAR REF GUARA 1KG ,     2.0   ,UN      ,          3.88 ,       7.76
+3777602 ,ORG ARROZ TIO JOAO1K ,     1.0   ,UN      ,         13.4  ,      13.4
+3517840 ,AZ PORT EV AND 250ML ,     1.0   ,UN      ,         24.28 ,      24.28
+1376261 ,BISC MAIZ PIRAQ 175G ,     2.0   ,UN      ,          2.9  ,       5.8
+ 211390 ,BISN TRAD S BOYS 300 ,     1.0   ,UN      ,          7.47 ,       7.47
+ 463478 ,CAFE 3 CORAC TRAD500 ,     1.0   ,UN      ,         18.93 ,      18.93
+ 778060 ,COLORIFICO KITAN 80G ,     2.0   ,UN      ,          3.29 ,       6.58
+1122701 ,FILE SADIA BJ 1KG    ,     4.0   ,UN      ,         18.36 ,      73.44
+1407648 ,P LAB NIVEA 48G ORI  ,     1.0   ,UN      ,         13.88 ,      13.88
+1281652 ,IOG LIQ MOR 1250G    ,     1.0   ,UN      ,         16.02 ,      16.02
+1126732 ,FORMA QUALITA        ,     1.0   ,UN      ,          6.79 ,       6.79
+4979227 ,QA ALHO CEB EF 200G  ,     1.0   ,UN      ,          9.02 ,       9.02

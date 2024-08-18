@@ -1,12 +1,12 @@
-Código,Nome,Quantidade,Unidade,Valor Unitário,Valor Total
-10793,ACEM BOV MOIDO kg,0.488,KG,23.3,11.37
-10793,ACEM BOV MOIDO kg,0.996,KG,23.3,23.21
-10798,ALCATRA BOV BIFE kg,0.492,KG,33.06,16.27
-11817,CARRE SUINO CONG kg,0.962,KG,15.88,15.28
-10232,CENOURA kg,0.178,KG,4.42,0.79
-11821,COXA C/SCOXA FRANGO CONG kg,1.586,KG,6.34,10.06
-11821,COXA C/SCOXA FRANGO CONG kg,1.0,KG,6.34,6.34
-11849,FILE PEITO FRANGO CONG kg,1.898,KG,15.78,29.95
-55521,BISC MAIZENA PIRAQUE PCT 175G TRAD,1.0,UN,3.85,3.85
-1743,PAO FORMA PLUS VITA 480G TRAD,1.0,UN,8.8,8.8
-3261,PAO FORMA SEVEN BOYS PCT 450G TRAD,1.0,UN,6.6,6.6
+Código ,Nome                               ,Quantidade ,Unidade ,Valor Unitário ,Valor Total
+ 10793 ,ACEM BOV MOIDO kg                  ,     0.488 ,KG      ,         23.3  ,      11.37
+ 10793 ,ACEM BOV MOIDO kg                  ,     0.996 ,KG      ,         23.3  ,      23.21
+ 10798 ,ALCATRA BOV BIFE kg                ,     0.492 ,KG      ,         33.06 ,      16.27
+ 11817 ,CARRE SUINO CONG kg                ,     0.962 ,KG      ,         15.88 ,      15.28
+ 10232 ,CENOURA kg                         ,     0.178 ,KG      ,          4.42 ,       0.79
+ 11821 ,COXA C/SCOXA FRANGO CONG kg        ,     1.586 ,KG      ,          6.34 ,      10.06
+ 11821 ,COXA C/SCOXA FRANGO CONG kg        ,     1.0   ,KG      ,          6.34 ,       6.34
+ 11849 ,FILE PEITO FRANGO CONG kg          ,     1.898 ,KG      ,         15.78 ,      29.95
+ 55521 ,BISC MAIZENA PIRAQUE PCT 175G TRAD ,     1.0   ,UN      ,          3.85 ,       3.85
+  1743 ,PAO FORMA PLUS VITA 480G TRAD      ,     1.0   ,UN      ,          8.8  ,       8.8
+  3261 ,PAO FORMA SEVEN BOYS PCT 450G TRAD ,     1.0   ,UN      ,          6.6  ,       6.6
